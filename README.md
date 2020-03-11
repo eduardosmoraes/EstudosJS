@@ -1,3 +1,3 @@
 # EstudosJS
 1. estudando window.alert()  
-- [ ]  tarefa 1
+- [X]  tarefa 1
