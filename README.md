@@ -11,3 +11,6 @@ window.prompt()
 
 - [X]  tarefa 2
 
+3. DOM
+
+- [X]  tarefa 3
