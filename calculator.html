@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator JS</title>
+    <style>
+body{
+    font: normal 18pt Arial;
+    background-color: teal;
+}
+div{
+    margin-top: 20px;
+}
+input{
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    font: normal 15px Arial;
+    margin: 12px;
+}
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" id="tn1" name="txtn1"> +
+    <input type="number" id="tn2" name="txtn2">
+    <input type="button" value="Somar" onclick="add()">
+    <div id="res">Resultado:</div>
+    <script>
+    function add(){ 
+        var tn1 = document.querySelector('input#tn1');
+        var tn2 = document.querySelector('input#tn2');
+        var res = document.getElementById('res');
+        var n1 = Number(tn1.value);
+        var n2 = Number(tn2.value);
+        var s = n1 + n2;
+        res.innerHTML = `Resultado: <strong>${s}</strong>`
+    }
+
+    </script>
+</body>
+</html>

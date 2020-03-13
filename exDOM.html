@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Starting DOM studies</h1>
+    <p>Here is the result</p>
+    <p>Learning to use <strong>DOM</strong> in JavaScript</p>
+    <div id="msg">click me</div> <br>
+    <script>
+        //window.document.write(window.document.URL);
+        //window.document.write(window.navigator.appName);
+        //window.document.write(window.document.charset);
+        var p1 = window.document.getElementsByTagName('p')[0];
+        window.document.write('Is written like this: ' + p1.innerText);
+        var corpo = document.body
+        corpo.style.background = 'blue' 
+
+       // document.write(p1.innerHTML) | para o texto ja vim com a formatacao do html.
+
+        var d = document.getElementById('msg')
+        d.style.background = 'black'
+        d.innerText = 'Estou aguardando...'
+
+        //Mais pratico para modificao rapida
+
+        var d = document.querySelector('div#msg');
+        
+        //d.style.background = 'green';
+
+
+
+    </script>
+
+</body>
+</html>

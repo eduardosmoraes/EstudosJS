@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #area{
+            background-color: teal;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" >
+        Interaja...
+    </div>
+
+
+    <script>
+/*onclick = "clicked()" onmouseenter = "pass ()" onmouseout="exit ()"
+isso e utilizado junto ao HTML mas usando a forma abaixo, nao e necessario utilizar assim*/
+        
+        var a = document.querySelector('div#area');
+        a.addEventListener('click',clicked);
+
+
+        var p = document.querySelector('div#area');   
+        p.addEventListener('mouseenter', pass);
+
+
+        var e = document.querySelector('div#area');
+        e.addEventListener('mouseout', exit);
+
+
+        function clicked() { 
+        var a = document.querySelector('div#area');
+       
+        a.innerText = 'Clicked'
+        a.style.background = 'black'
+        
+    } 
+        function pass(){
+            var p = document.querySelector('div#area');
+            p.style.background = 'teal';
+            p.innerText = 'Came in'
+            
+        }
+        function exit (){
+            var e = document.querySelector('div#area');
+            e.style.background = 'teal';
+            e.innerText = 'Exiting!'
+        }
+   /* function clicked() { 
+        var a = window.document.getElementById("area");
+        a.innerText = 'Clicked'
+    }*/
+
+    </script>
+</body>
+</html>
