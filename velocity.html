@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query of velocity</title>
+</head>
+<body>
+    <h1>Query of your situation!</h1>
+   Type speed: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="check"  onclick = "calculate()">
+    <div id="res">  </div>
+    <script>
+       function calculate(){
+            var txtv = document.querySelector('#txtvel');
+            var res = document.getElementById('res');
+            var vel = Number(txtvel.value);
+
+            res.innerHTML = `<p>Your speed is: ${vel}.</p>`
+
+            if (vel > 60){
+                res.innerHTML += '<p>You have excedeed the speed. Fined!</p>'
+            }
+            res.innerHTML += "<p>Always drive carefully and do not forget the safety code</p>"
+        }
+    </script>
+    
+</body>
+</html>

@@ -14,3 +14,6 @@ window.prompt()
 3. DOM
 
 - [X]  tarefa 3
+
+- []  tarefa 4 (fazer calculadoras de 4 operadores)
+

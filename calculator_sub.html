@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Sub</title>
+    <link rel="stylesheet" href="sub.css">
+</head>
+<body>
+    <h1>Calculator of Subtraction</h1>
+    <input type="number" id="txtn1">
+    <input type="number" id="txtn2">
+    <input type="button" value="Subtrair" onclick="sub()">
+    <div id="res">Resultado:</div>
+
+    <script>
+        function sub(){
+            var n1 = document.querySelector('#txtn1');
+            var n2 = document.getElementById('txtn2');
+            var res = document.querySelector('#res');
+            var n1 = Number (txtn1.value);
+            var n2 = Number (txtn2.value);
+            var sub = n1 - n2;
+            res.innerHTML = ('Resultado: ' + sub)
+        }
+    </script>
+
+
+</body>
+</html>
