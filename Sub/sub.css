@@ -1,0 +1,28 @@
+*{
+    text-align: center;
+}
+txtn1, txtn2{
+    padding: 14px;
+}
+
+body{
+    background: linear-gradient(to left, rgb(87, 146, 206) , rgb(71, 76, 78));   
+    
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    padding: 5px;
+    
+}
+
+input {
+    border-radius: 3px;
+    padding: 5px;
+    width: auto;
+}
+
+div{
+    padding: 15px;
+    font-size: large;
+}
