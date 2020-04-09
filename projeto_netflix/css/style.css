@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    
+} 
+
+body {
+   background-color: black;
+   /*rgb(32, 29, 29); - Cor final*/
+}
+
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{clear:both;}
+
+header{
+    background: transparent;
+    padding: 12px 0;
+}
+
+/*Menu1 - header*/
+
+.header-left{
+    float: left;
+    background: transparent;
+     
+}
+
+.header-left img{
+   max-width: 100px;
+}
+
+.menu-header{
+   /* position: relative;
+    top: -20px;     -    Essa e uma alternativa para ajusatar os intens,
+     assim como o vertical align*/
+    vertical-align: 20px;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.menu-header li{
+    margin-right: 15px;
+    display: inline-block;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+   
+}
+
+/***/
+
+.header-right{
+    float: right;
+    margin-top: 20px;
+}
+
+
+.search,
+ .notifications{ 
+    display: inline-block;
+}
+
+.notifications{
+    position: relative;
+}
+.circle-notifications{
+    position: absolute;
+    right: 0;
+    top: -5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #e50914;
+    text-align: center;
+    
+}
+
+.circle-notifications span{
+    font-size: 11px;
+    color: white;
+    vertical-align: 19px;
+}
+
+.header-right i{
+    margin: 0 12px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+section.destaque{
+    background-image:url('../Images/banner1.png');
+    background-size: over; /*Cobrir tudo e ficar responsivo independente do tamanho de tela*/
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    /*min-height: 600px;*/
+}
+
+.overlay{
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,transparent, rgba(0, 0, 0,1));
+
+}
+
+.texto-destaque{
+    z-index: 3;
+    color: white;
+    margin-top: 70px;
+    margin-left: 4%;
+    position: relative;
+}
+
+.texto-destaque h2{
+    color: teal;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.texto-destaque h3{
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.texto-destaque p{
+    margin: 20px 0;
+    font-size: 19px;
+}
+
+.texto-destaque a{
+    background-color: rgba(0, 0, 0,0.5);
+    padding: 8px 25px;
+    font-size: 15px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.texto-destaque i{
+    margin-left: 0px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.texto-destaque a:hover{
+        background-color: white;
+        color: rgba(0, 0, 0,1);
+        padding: 12px 30px;
+        position: relative;
+    }
+
+    h1{
+        color: white;
+        
+    }
+    
