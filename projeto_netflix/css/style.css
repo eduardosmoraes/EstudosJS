@@ -171,4 +171,11 @@ section.destaque{
         color: white;
         
     }
-    
+
+.main-slide img{
+    width: 20px;
+    height: 10px;
+}
+.main-slide{
+    position: absolute;
+}
